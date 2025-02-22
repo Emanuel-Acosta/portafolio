@@ -25,7 +25,7 @@ $('document').ready(function(){
 
     var boton = document.getElementById('boton');
         
-    $('#tagline').t({
+    $('#tagline').t({ /*Opciones de la animación del texto*/
         beep:false,
         caret:'<span style="color:hotpink;">•</span>',
         typing:function(elm,chr){
@@ -34,7 +34,7 @@ $('document').ready(function(){
         }
     });
 
-    $('#boton-arriba').click(function(){
+    $('#boton-arriba').click(function(){  //Función que se ejecuta al hacer click en el botón de subir.
         $('body, html').animate({
           scrollTop: '0px'
         }, 300);
