@@ -258,9 +258,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main .proyectos .contenedor-proyectos .proyecto .info h4 {
   text-align: left;
-  margin-bottom: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.0rem;
   font-size: 1.3rem;
 }
+
 .main .proyectos .contenedor-proyectos .proyecto .info h5 {
   text-align: center;
   margin-bottom: 1rem;
@@ -279,14 +281,21 @@ h1, h2, h3, h4, h5, h6, p {
   color: #0571BA;
 }
 .main .proyectos .contenedor-proyectos .proyecto .info p .javascript {
-  color: #958120;
+  color: #ccae19;
 }
 .main .proyectos .contenedor-proyectos .proyecto .info p .bootstrap {
   color: #623F91;
 }
-.main .proyectos .contenedor-proyectos .proyecto .info p .sass {
-  color: #CC6699;
+.main .proyectos .contenedor-proyectos .proyecto .info p .python {
+  color: #1100ff;
 }
+.main .proyectos .contenedor-proyectos .proyecto .info p .flask {
+  color: #2ac57d;
+}
+.main .proyectos .contenedor-proyectos .proyecto .info p .mysql {
+  color: #a59e6c;
+}
+
 .main .proyectos .contenedor-proyectos .proyecto .info .foto img {
   width: 100%;
   height: 11.25rem;
