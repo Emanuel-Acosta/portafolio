@@ -1,7 +1,7 @@
 # Portafolio de Emanuel Acosta
 
 ¡Bienvenido a mi portafolio! Soy Emanuel Acosta, un desarrollador web Full Stack con un enfoque especial en Python y Flask. Aquí puedes conocer más sobre mí, mis proyectos y habilidades.
-
+- **Despliegue portafolio:** [Acceder a la aplicación](https://emanuel-acosta.github.io/portafolio/)
 ## Contenido
 
 - [Sobre mí](#sobre-mí)
