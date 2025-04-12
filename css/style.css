@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 1rem;
 }
 .main .sobre-mi .contenedor-sobre-mi .texto .descripcion {
-  color: grey;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   line-height: 1.5; /* Espaciado entre líneas */
 }
@@ -310,27 +310,47 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main .conocimientos .contenedor .contenedor-conocimientos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   grid-row-gap: 2rem;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta {
   margin: 4rem auto 0 auto;
   position: relative;
-  width: 15rem;
-  height: 20rem;
+  width: 8rem;
+  height: 10.5rem;
   background: #262626;
   overflow: hidden;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input,
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .cambio {
   position: absolute;
-  width: 3.125rem;
-  height: 3.125rem;
-  bottom: 1.25rem;
-  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
   outline: none;
   z-index: 10; /* Asegura que el elemento esté por encima de los demás */
 }
+
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .detalles {
+  text-align: center; /* Centra todo el contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resaltado {
+  color: #ecde10; /* o el color que prefieras */
+  font-weight: bold;
+}
+
+.contenedor-conocimientos {
+  margin-bottom: 5rem; /* Ajustá según necesidad */
+}
+
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input {
   opacity: 0;
 }
@@ -389,6 +409,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #ffffff;
   line-height: 1.65;
 }
+
 .main .certificados {
   min-height: 100vh;
   padding: 3rem 0;
