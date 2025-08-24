@@ -22,9 +22,9 @@ html { /* Define el modelo de caja para el HTML y activa un desplazamiento suave
 
 body {
   font-family: "Oswald", sans-serif;
-  background: url("../img/estrellas1.jpg") repeat;
+  background: url("../img/fondo4.jpg");
   background-attachment: fixed;
-  color: #ffffff;
+  color: #3d8d7a;
 }
 
 .contenedor {
@@ -149,6 +149,11 @@ h1, h2, h3, h4, h5, h6, p {
 .header {
   height: 30rem;
   width: 100%;
+  display: flex;               /*  Pone los hijos en fila */
+  flex-direction: row;         /*  En dirección horizontal */
+  justify-content: center;     /* Centra horizontalmente */
+  align-items: center;         /*  Centra verticalmente */
+  gap: 2rem;                   /*  Espacio entre los 3 divs */
 }
 .header .contenedor-header {
   height: 100%;
@@ -159,7 +164,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center; 
 }
 .header .contenedor-header .imagen {
-  width: 10rem; 
+  width: 18rem; 
   height: auto;
   margin-bottom: 1rem; /* Espacio entre la imagen y el nombre */
 }
@@ -199,13 +204,13 @@ h1, h2, h3, h4, h5, h6, p {
 .main .sobre-mi {
   min-height: 100vh;
   padding: 3rem 0;
-  background: #ffffff;
+  background: #a2ecdb;
   color: #000000;
   margin-bottom: 3rem;
 }
 .main .sobre-mi .contenedor-sobre-mi .texto {
   padding: 1.5rem 0;
-  background: #101010;
+  background: #2f3635;
   color: #3d8d7a;
   font-family: monospace, Arial;
   width: 70%;
@@ -234,27 +239,30 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 .main .proyectos {
-  padding: 3rem 0;
-  margin-bottom: 3rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
 }
+
+
 .main .proyectos .contenedor-proyectos {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 5rem;
+  grid-row-gap: 1rem;
 }
 .main .proyectos .contenedor-proyectos .proyecto {
   margin: auto;
-  width: 250px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
 }
 .main .proyectos .contenedor-proyectos .proyecto .info {
   padding: 1rem 0.5rem;
-  height: 10.625rem;
+  height: 8rem;
   background: #ffffff;
   color: #000000;
-  border: 0.125rem solid #969a97;
+  border: 0.2rem solid #a2ecdb;
+  border-radius: 0.625rem;
 }
 .main .proyectos .contenedor-proyectos .proyecto .info h4 {
   text-align: left;
@@ -274,26 +282,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 0.9rem;
   font-weight: bold;
 }
-.main .proyectos .contenedor-proyectos .proyecto .info p .html {
-  color: #854723;
-}
-.main .proyectos .contenedor-proyectos .proyecto .info p .css {
-  color: #0571BA;
-}
-.main .proyectos .contenedor-proyectos .proyecto .info p .javascript {
-  color: #ccae19;
-}
-.main .proyectos .contenedor-proyectos .proyecto .info p .bootstrap {
-  color: #623F91;
-}
-.main .proyectos .contenedor-proyectos .proyecto .info p .python {
-  color: #1100ff;
-}
-.main .proyectos .contenedor-proyectos .proyecto .info p .flask {
-  color: #2ac57d;
-}
-.main .proyectos .contenedor-proyectos .proyecto .info p .mysql {
-  color: #a59e6c;
+
+.proyecto .foto img {
+    border-radius: 10px; /* Puedes ajustar el valor según lo redondeado que lo quieras */
 }
 
 .main .proyectos .contenedor-proyectos .proyecto .info .foto img {
@@ -301,13 +292,17 @@ h1, h2, h3, h4, h5, h6, p {
   height: 11.25rem;
   vertical-align: top;
 }
+
+
 .main .conocimientos {
   min-height: 100vh;
-  background: #ffffff;
+  background: #a2ecdb;
   color: #000000;
   padding: 3rem 0;
   margin-bottom: 3rem;
 }
+
+
 .main .conocimientos .contenedor .contenedor-conocimientos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
@@ -320,6 +315,10 @@ h1, h2, h3, h4, h5, h6, p {
   height: 10.5rem;
   background: #262626;
   overflow: hidden;
+}
+
+.tarjeta{
+  border-radius: 3px;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input,
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .cambio {
@@ -521,5 +520,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main .proyectos .contenedor-proyectos .proyecto .foto a img:hover {
   filter: grayscale(100);
+}
+
+
+.footer {
+    background-color: transparent !important;
 }
 
